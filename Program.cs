@@ -53,9 +53,9 @@ car.NumberOfDoors = 4;
 
 List<Vechicle> userVechile = new List<Vechicle>();
 
-userVechile.Add(new userCar{Brand = "Toyota",NumberOfDoors = 4, NumberOFWheels = 4});
-userVechile.Add(new userMotorcycle{Brand = "Honda"});
-userVechile.Add(new userPlane{Brand = "Boeing", NumberOfDoors = 2});
+userVechile.Add(new UserCar{Brand = "Toyota",NumberOfDoors = 4, NumberOFWheels = 4});
+userVechile.Add(new UserMotorcycle{Brand = "Honda"});
+userVechile.Add(new UserPlane{Brand = "Boeing", NumberOfDoors = 2});
 
 //vechicle inspections
 
@@ -63,17 +63,17 @@ userVechile.Add(new userPlane{Brand = "Boeing", NumberOfDoors = 2});
 
 foreach  (var vechile in userVechile)
 {
-    if (vechile is userCar)
+    if (vechile is UserCar)
     {
-        var mycar = (userCar)vechile;
+        var mycar = (UserCar)vechile;
         mycar.Start();
-    }else if (vechile is userMotorcycle)
+    }else if (vechile is UserMotorcycle)
     {
-        var myMotorcycle = (userMotorcycle)vechile;
+        var myMotorcycle = (UserMotorcycle)vechile;
         myMotorcycle.Start();
-    }else if (vechile is userPlane)
+    }else if (vechile is UserPlane)
     {
-        var myPlane = (userPlane)vechile;
+        var myPlane = (UserPlane)vechile;
         myPlane.Start();
     }
 }

@@ -8,6 +8,6 @@ public class Userservice
     {
         EmailSender emailSender = new EmailSender();
         emailSender.sendEmail(user.Email, "Welcome to our application!");
-
+ 
     }
 }

@@ -3,7 +3,7 @@ using System;
 
 namespace oopPrinciple.Polymorphism;
 
-class userCar : Vechicle
+class UserCar : Vechicle
 {
     public int NumberOfDoors { get; set; }
     public int NumberOFWheels {get; set;}

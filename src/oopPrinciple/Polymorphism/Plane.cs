@@ -2,7 +2,7 @@
 
 namespace oopPrinciple.Polymorphism;
 
-class userPlane: Vechicle
+class UserPlane: Vechicle
 {
     public int NumberOfDoors { get; set; }
 
