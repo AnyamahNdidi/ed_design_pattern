@@ -8,6 +8,7 @@ using oopPrinciple.Polymorphism;
 using Microsoft.VisualBasic;
 using DesingPatternOOP_.src.oopPrinciple.Coupling;
 using DesingPatternOOP_.src.oopPrinciple.Compositions;
+using DesingPatternOOP_.src.SOLID.L;
 
 
 //encapsulation is one of the fundamental principles of object-oriented programming (OOP) 
@@ -98,4 +99,28 @@ Carcom comcar = new Carcom();
 comcar.startCar();
 
 
-Console.WriteLine("----------------------------SOLID PRONCIPLES----------------------------------------`");
+Console.WriteLine("----------SOLID PRONCIPLES-------");
+
+
+Console.WriteLine("-------------------------------Liskov substitution Principle-------------------------------------`");
+
+//Liskov substitution Principle
+
+// "objects of a superclass should be replaceable with objects of its subclass
+//  without affecting the correctness of the program"
+
+// var rect = new Lrectangle();
+// rect.Height = 10;
+// rect.Width = 5;
+
+// Console.WriteLine("execpted area = 10 * 5 = 50");
+// System.Console.WriteLine($"calculated area = {rect.Area}");
+
+
+Lshape rectangle = new Lrectangle{Height =10, Width=5};
+System.Console.WriteLine($"Area of a rectangle : {rectangle.Area}");
+
+Lshape square = new Lsquare{ SideLength = 5};
+System.Console.WriteLine($"Area of a square : {square.Area}");
+
+
