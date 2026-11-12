@@ -9,6 +9,8 @@ using Microsoft.VisualBasic;
 using DesingPatternOOP_.src.oopPrinciple.Coupling;
 using DesingPatternOOP_.src.oopPrinciple.Compositions;
 using DesingPatternOOP_.src.SOLID.L;
+using DesingPatternOOP_;
+using DesingPatternOOP_.src.SOLID.I;
 
 
 //encapsulation is one of the fundamental principles of object-oriented programming (OOP) 
@@ -122,5 +124,16 @@ System.Console.WriteLine($"Area of a rectangle : {rectangle.Area}");
 
 Lshape square = new Lsquare{ SideLength = 5};
 System.Console.WriteLine($"Area of a square : {square.Area}");
+
+
+
+// Interface Segregation Principle (ISP) is one of the SOLID principles of object-oriented design.
+
+
+//CLIENT SHOULD NOT BE FORCED TO DEPEND ON INTERFACES THEY DO NOT USE
+
+var incircle = new InCircle();
+incircle.Radius = 5;
+System.Console.WriteLine($"Area of a circle : {incircle.Area()}");
 
 
