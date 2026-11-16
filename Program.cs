@@ -11,6 +11,7 @@ using DesingPatternOOP_.src.oopPrinciple.Compositions;
 using DesingPatternOOP_.src.SOLID.L;
 using DesingPatternOOP_;
 using DesingPatternOOP_.src.SOLID.I;
+using DesingPatternOOP_.src.SOLID.D;
 
 
 //encapsulation is one of the fundamental principles of object-oriented programming (OOP) 
@@ -137,3 +138,17 @@ incircle.Radius = 5;
 System.Console.WriteLine($"Area of a circle : {incircle.Area()}");
 
 
+
+Console.WriteLine("-------------------------------Dependency Inversion Principle-------------------------------------`");
+
+// dependency inversion principle (DIP) is one of the SOLID principles of object-oriented design.
+
+//high-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces).
+
+
+
+Dcar dcar = new Dcar(new Dengine());
+dcar.StartCar();
+
+var electricCar = new Dcar(new DelectricEngine());
+electricCar.StartCar();
